@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>方程式解法アプリ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #app {
+            display: flex;
+            justify-content: space-between;
+        }
+        #input-section {
+            width: 30%;
+            padding: 20px;
+            border-right: 1px solid black;
+        }
+        #equation-display {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #graph-canvas {
+            border: 1px solid black;
+            width: 60%;
+            height: auto;
+        }
+        .input-label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="input-section">
+            <!-- 入力ボックス -->
+            <label class="input-label">xの係数</label><input type="text" id="coef_x">
+            <label class="input-label">x^2の係数</label><input type="text" id="coef_x2">
+            <label class="input-label">x^3の係数</label><input type="text" id="coef_x3">
+            <label class="input-label">x^4の係数</label><input type="text" id="coef_x4">
+            <label class="input-label">x^5の係数</label><input type="text" id="coef_x5">
+            <label class="input-label">定数項</label><input type="text" id="constant">
+            <label class="input-label">許容誤差</label><input type="text" id="tolerance">
+            <label class="input-label">二分法の初期値</label><input type="text" id="bisection_initial1"><input type="text" id="bisection_initial2">
+            <label class="input-label">ニュートン法の初期値</label><input type="text" id="newton_initial">
+            <div>
+                <input type="radio" id="last_only" name="step_display" value="last_only" checked><label for="last_only">直前だけ残す</label>
+                <input type="radio" id="all" name="step_display" value="all"><label for="all">全て残す</label>
+            </div>
+            <button id="execute">実行</button>
+            <button id="show_steps" disabled>途中経過</button>
+            <button id="reset" disabled>リセット</button>
+        </div>
+        <div id="equation-display"></div>
+        <canvas id="graph-canvas" width="600" height="600"></canvas>
+    </div>
+    <script>
+        // JavaScriptコードを以下に追加します。
+    </script>
+</body>
+</html>
