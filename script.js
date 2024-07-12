@@ -50,4 +50,9 @@ function drawFunction(coef) {
 document.getElementById('execute').addEventListener('click', () => {
     displayEquation();
     drawFunction(coef);
+    console.log('Execute button clicked');
+    displayEquation();
+    console.log('Equation displayed');
+    drawFunction(coef);
+    console.log('Function drawn');
 });
