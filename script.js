@@ -56,3 +56,11 @@ document.getElementById('execute').addEventListener('click', () => {
     drawFunction(coef);
     console.log('Function drawn');
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
+
+document.getElementById('execute').addEventListener('click', () => {
+    console.log('Execute button clicked');
+});
